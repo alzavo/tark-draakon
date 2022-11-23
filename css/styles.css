@@ -41,7 +41,7 @@ body {
     border-radius: 1rem;
     flex-direction: column;
     margin: auto;
-    height: 90vh;
+    min-height: 65vh;
     width: 90vw;
 }
 
@@ -99,13 +99,9 @@ a {
     color: inherit;
 }
 
-.container {
-    height: 70vh;
-}
-
 img {
-    width: 12rem;
-    height: 12rem;
+    width: 10rem;
+    height: 10rem;
 }
 
 label,
@@ -179,8 +175,8 @@ button {
 
 @media screen and (min-width: 1201px) {
     .container {
-        width: 35vw;
-        height: 85vh;
+        width: 30vw;
+        height: 60vh;
     }
 
     img {
