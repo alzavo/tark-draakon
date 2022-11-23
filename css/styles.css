@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+body,
+.container,
+.image-wrapper,
+.select-wrapper,
+.button-wrapper {
+    display: flex;
+}
+
+.container,
+.image-wrapper {
+    justify-content: center;
+}
+
+.select-wrapper,
+.button-wrapper {
+    padding: 0.2rem;
+}
+
+body {
+    padding: 1rem;
+    background-color: #75CC65;
+}
+
+.container {
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    flex-direction: column;
+    margin: auto;
+    height: 90vh;
+    width: 90vw;
+}
+
+.select-wrapper {
+    align-items: center;
+}
+
+.links-wrapper {
+    height: 70vh;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+label,
+select,
+button::first-letter {
+    text-transform: capitalize;
+}
+
+label {
+    text-align: right;
+}
+
+select {
+    background: #75CC65;
+    color: #ffffff;
+}
+
+.link {
+    background-color: #75CC65;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 0.5rem 0;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.link:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #75CC65;
+    border: 0.1rem solid #75CC65;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    height: 70vh;
+}
+
+img {
+    width: 17rem;
+    height: 17rem;
+}
+
+label,
+select,
+button {
+    font-size: 1.5rem;
+}
+
+button,
+select {
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+label {
+    width: 30%;
+    padding-right: 1rem;
+}
+
+select {
+    width: 70%;
+}
+
+button {
+    width: 100%;
+    background-color: grey;
+    border: 0.1rem solid grey;
+}
+
+@media screen and (min-width: 481px) {
+    .container {
+        width: 55vw;
+        height: 85vh;
+    }
+
+    img {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    label,
+    select,
+    button {
+        font-size: 1.7rem;
+    }
+
+    button,
+    select {
+        border-radius: 1rem;
+        padding: 0.5rem;
+    }
+
+    label {
+        width: 30%;
+        padding-right: 1rem;
+    }
+
+    select {
+        width: 60%;
+    }
+
+    button {
+        width: 80%;
+        margin: 0.5rem auto auto auto;
+    }
+
+    .link {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .container {
+        width: 35vw;
+        height: 85vh;
+    }
+
+    img {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    label,
+    select,
+    button {
+        font-size: 1.7rem;
+    }
+
+    button,
+    select {
+        border-radius: 1rem;
+        padding: 0.5rem;
+    }
+
+    label {
+        width: 30%;
+        padding-right: 1rem;
+    }
+
+    select {
+        width: 60%;
+    }
+
+    button {
+        width: 80%;
+        margin: 0.5rem auto auto auto;
+    }
+
+    .link {
+        font-size: 1.5rem;
+    }
+}

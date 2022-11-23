@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tark Draakon</title>
+    <script src="../js/utils.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="image-wrapper">
+            <img src="../pictures/logo.png" alt="kolmepeaga draakon koos õpikutega">
+        </div>
+
+        <div class="select-wrapper">
+            <label for="grade">klass</label>
+            <select name="grade" id="grade">
+                <option selected="selected" value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+        <div class="select-wrapper">
+            <label for="month">kuu</label>
+            <select name="month" id="month">
+                <option selected="selected" value="september">september</option>
+                <option value="oktoober">oktoober</option>
+                <option value="november">november</option>
+                <option value="detsember">detsember</option>
+                <option value="jaanuar">jaanuar</option>
+                <option value="veebruar">veebruar</option>
+                <option value="märts">märts</option>
+                <option value="april">april</option>
+                <option value="mai">mai</option>
+            </select>
+        </div>
+
+        <div class="select-wrapper">
+            <label for="subject">aine</label>
+            <select name="subject" id="subject">
+                <option selected="selected" value="matemaatika">matemaatika</option>
+                <option value="eesti keel">eesti keel</option>
+                <option value="loodusõpetus">loodusõpetus</option>
+            </select>
+        </div>
+
+        <div class="button-wrapper">
+            <button onclick="saveSelectedOptions(); goToPage('/pages/result.html');">otsi</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    restorePreviousOptions();
+</script>
