@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-transform: uppercase;
 }
 
 html,
@@ -54,12 +55,6 @@ body {
     margin-bottom: 1rem;
     padding: 1rem;
     overflow-y: scroll;
-}
-
-label,
-select,
-button::first-letter {
-    text-transform: capitalize;
 }
 
 label {
@@ -175,7 +170,7 @@ button {
 
 @media screen and (min-width: 1201px) {
     .container {
-        width: 30vw;
+        width: 35vw;
         height: 60vh;
     }
 
